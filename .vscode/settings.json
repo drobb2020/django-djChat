@@ -1,3 +1,26 @@
 {
-  "cSpell.words": ["HTMX", "Laravel", "roadmap", "Tailwindcss"]
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "none",
+  "python.formatting.blackArgs": ["--line-length", "119"],
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length", "119"],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "cSpell.words": [
+    "djchat",
+    "dotenv",
+    "fdaa",
+    "hgqltb",
+    "HTMX",
+    "Laravel",
+    "roadmap",
+    "Tailwindcss",
+    "tvkv"
+  ]
 }
