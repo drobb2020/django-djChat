@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="static/assets/logo.png" alt="Logo" height="100">
+    <img src="assets/logo.png" alt="Logo" height="100">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -108,7 +108,9 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
+
 * npm
+
   ```sh
   npm install npm@latest -g
   ```
@@ -117,14 +119,19 @@ This is an example of how to list things you need to use the software and how to
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
+
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
+
 3. Install NPM packages
+
    ```sh
    npm install
    ```
+
 4. Enter your API in `config.js`
+
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
@@ -187,9 +194,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [X](Him)
+* [X](Her)
+* [X](Them)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -207,4 +214,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: static/assets/screenshot.png
+[product-screenshot]: assets/screenshot.png
