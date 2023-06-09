@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info:
+  title: Django Chat API
+  version: 1.0.0
+  description: Combining drf and channels with a react frontend
+paths: {}
+components: {}
