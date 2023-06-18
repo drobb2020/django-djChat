@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     # Modules
     "django_extensions",
     "drf_spectacular",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -117,6 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
+MEDIA_URL = "/media/"
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / "static-env"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -127,11 +132,14 @@ AUTH_USER_MODEL = "account.Account"
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+    ],
 }
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Django Chat API',
-    'DESCRIPTION': 'Combining drf and channels with a react frontend',
-    'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': True,
+    "TITLE": "Django Chat API",
+    "DESCRIPTION": "Django Rest Framework and Django Channels with a react frontend for an awesome chat server.",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": True,
 }

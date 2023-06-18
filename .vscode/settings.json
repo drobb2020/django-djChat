@@ -21,7 +21,9 @@
     "Laravel",
     "openapi",
     "roadmap",
+    "serverid",
     "Tailwindcss",
-    "tvkv"
+    "tvkv",
+    "viewsets"
   ]
 }
