@@ -86,16 +86,13 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 - [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com/)
 - [Django](https://www.djangoproject.com/)
-- [Flask](https://flask.palletsprojects.com/en/2.3.x/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Django Rest Framework](https://www.django-rest-framework.org/)
+- [drf-spectacular](https://drf-spectacular.readthedocs.io/en/latest/)
+<!-- - [Bootstrap](https://getbootstrap.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [JQuery](https://jquery.com/)
+- [JQuery](https://jquery.com/) -->
 - [HTMX](https://htmx.org/)
 - [Alpine.js](https://alpinejs.dev/)
 
