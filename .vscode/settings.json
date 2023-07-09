@@ -13,11 +13,15 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "cSpell.words": [
+    "corsheaders",
     "djchat",
     "dotenv",
     "fdaa",
     "hgqltb",
     "HTMX",
+    "Iuse",
+    "jwtinterceptor",
+    "keydown",
     "Laravel",
     "openapi",
     "reactchat",

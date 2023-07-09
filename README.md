@@ -89,12 +89,13 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 - [Django](https://www.djangoproject.com/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [drf-spectacular](https://drf-spectacular.readthedocs.io/en/latest/)
+- [Material UI](https://mui.com/)
 <!-- - [Bootstrap](https://getbootstrap.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [JQuery](https://jquery.com/) -->
+- [JQuery](https://jquery.com/)
 - [HTMX](https://htmx.org/)
-- [Alpine.js](https://alpinejs.dev/)
+- [Alpine.js](https://alpinejs.dev/) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -1,11 +1,48 @@
 # from django.shortcuts import render
 from django.db.models import Count
+from drf_spectacular.utils import extend_schema
 from rest_framework import viewsets
 from rest_framework.exceptions import AuthenticationFailed, ValidationError
 from rest_framework.response import Response
-from server.models import Server
+from server.models import Category, Server
 from server.schema import server_list_docs
-from server.serializers import ServerSerializer
+from server.serializers import CategorySerializer, ServerSerializer
+
+
+class CategoryListViewSet(viewsets.ViewSet):
+    """
+    A ViewSet for retrieving a list of categories.
+
+    Attributes:
+        queryset (QuerySet): The queryset containing all Category objects.
+
+    Methods:
+        list(request): Retrieves a list of categories and returns the serialized data.
+
+    Example:
+        To retrieve a list of categories, make a GET request to the following endpoint:
+        /categories/
+    """
+
+    queryset = Category.objects.all()
+
+    @extend_schema(responses=CategorySerializer)
+    def list(self, request):
+        """
+        Retrieve a list of categories.
+
+        Args:
+            request (HttpRequest): The HTTP request object.
+
+        Returns:
+            Response: The serialized data of the retrieved categories.
+
+        Example:
+            >>> # Make a GET request to retrieve a list of categories
+            >>> response = client.get('/categories/')
+        """
+        serializer = CategorySerializer(self.queryset, many=True)
+        return Response(serializer.data)
 
 
 class ServerListViewSet(viewsets.ViewSet):

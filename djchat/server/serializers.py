@@ -2,7 +2,19 @@
 Serializers for the Server API.
 """
 from rest_framework import serializers
-from server.models import Channel, Server
+from server.models import Category, Channel, Server
+
+
+class CategorySerializer(serializers.ModelSerializer):
+    """
+        Serializer for Categories
+
+        Attributes:
+            Meta (class): Metadata class for defining serialization behavior.
+    """
+    class Meta:
+        model = Category
+        fields = '__all__'
 
 
 class ChannelSerializer(serializers.ModelSerializer):
@@ -11,7 +23,6 @@ class ChannelSerializer(serializers.ModelSerializer):
 
         Attributes:
             Meta (class): Metadata class for defining serialization behavior.
-
     """
 
     class Meta:
@@ -47,6 +58,7 @@ class ServerSerializer(serializers.ModelSerializer):
 
     num_members = serializers.SerializerMethodField()
     channel_server = ChannelSerializer(many=True)
+    category = serializers.StringRelatedField()
 
     class Meta:
         """
